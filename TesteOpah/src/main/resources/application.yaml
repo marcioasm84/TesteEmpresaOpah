@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: TesteOpah
+  
+  data:
+    mongodb:
+      uri: mongodb+srv://marcioasm:marcioasm123@apirestwebflux.1y6nphk.mongodb.net/?retryWrites=true&w=majority&appName=apirestwebflux
+      database: apirestwebflux
