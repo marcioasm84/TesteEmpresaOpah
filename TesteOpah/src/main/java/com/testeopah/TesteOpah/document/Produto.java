@@ -71,4 +71,14 @@ public class Produto {
 		this.categoria = categoria;
 	}
 
+    public void aumentaQuantidade(int quantidade) {
+        this.quantidade += quantidade;
+    }
+    
+    public void diminueQuantidade(int quantidade) {
+        this.quantidade -= quantidade;
+        if(this.quantidade < 0) {
+        	this.quantidade = 0;
+        }
+    }
 }
