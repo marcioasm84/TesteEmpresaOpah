@@ -1,3 +1,11 @@
+app:
+  broker:
+    exchange: 
+      novoPedidoEvent: app.novopedidoevent
+    queue:
+      novoPedidoEventQueue:
+        name: app.novopedidoevent
+        
 spring:
   application:
     name: TesteOpah

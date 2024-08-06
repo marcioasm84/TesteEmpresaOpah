@@ -1,6 +1,7 @@
 package com.testeopah.TesteOpah.document;
 
 import java.util.Date;
+import java.util.Random;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -58,4 +59,12 @@ public class Pedido {
         this.status = status;
     }
 
+    public static Status gerarStatus() {
+    	final Random gerador = new Random();
+    	if(gerador.nextInt(10) % 2 == 0) {
+    		return Status.DONE;
+    	} else {
+    		return Status.ERROR_PAYMENT;
+    	}
+    }
 }

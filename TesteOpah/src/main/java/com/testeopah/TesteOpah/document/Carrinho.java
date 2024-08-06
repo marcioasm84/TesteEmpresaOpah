@@ -17,9 +17,9 @@ public class Carrinho {
 
     public Carrinho() {
     	/*
-        this.produtos = new HashMap<>();
+        this.produtos = new HashMap<>();*/
         this.dataCriacao = new Date();
-        this.dataAlteracao = new Date();*/
+        this.dataAlteracao = null;
     }
 
     public Map<String, Integer> getProdutos() {

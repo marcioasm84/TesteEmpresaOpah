@@ -35,7 +35,7 @@ public class CarrinhoService {
                         	if(produtoSalvo != null) {
                         		qtd = produtoSalvo.intValue();
                         	}
-                            carrinho.getProdutos().put(produto.getId(), quantidade + qtd);
+                        	carrinho.adicionarProduto(idProduto, quantidade + qtd);
                             return carrinhoRepository.save(carrinho);
                         }));
     }
